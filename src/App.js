@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./calc.svg";
 
 function App() {
   const [calc, setCalc] = useState("");
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <div className="App">
+      <div>{calc.svg}</div>
       <div className="calculator">
         <div className="display">
           {result ? <span>({result})</span> : ""} &nbsp;
